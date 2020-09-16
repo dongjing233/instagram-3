@@ -1,0 +1,54 @@
+$color1: #ff7e67;
+$color2:#206a5d;
+@mixin center{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+header{
+    color:white;
+    @include center();
+    font-family: 'Anton';
+    font-size:100pt;
+    line-height: 200pt;
+    // background: -webkit-linear-gradient(rgba(238,174,202,1) 0%,  #ff7e67);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+}
+
+footer{
+    color:white;
+    @include center();
+    font-family: 'Anton';
+    font-size:30pt;
+    line-height: 260pt;
+}
+
+body{
+    background: rgb(32,106,93);
+    background: linear-gradient(90deg, rgba(32,106,93,1) 0%, rgba(137,168,255,1) 100%);
+    }
+
+.container > div {
+    border-radius: 5px;
+    padding: 10px;
+    border:color1;
+    border-style: dashed;
+    font-family: "Anton";
+    font-size:2.5em;
+    color:white;
+  }                  
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 30px;
+  }
+
+  .disappear:hover{
+    opacity:0;
+    cursor: not-allowed;
+
+  }
